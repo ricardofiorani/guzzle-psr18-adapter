@@ -1,11 +1,13 @@
 # guzzle-psr18-adapter
 
-[![Latest Version on Packagist][ico-version]][link-packagist]
-[![Software License][ico-license]](LICENSE.md)
-[![Build Status][ico-travis]][link-travis]
-[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
-[![Quality Score][ico-code-quality]][link-code-quality]
-[![Total Downloads][ico-downloads]][link-downloads]
+[![Build Status](https://api.travis-ci.org/ricardofiorani/guzzle-psr18-adapter.svg?branch=master)](http://travis-ci.org/ricardofiorani/guzzle-psr18-adapter)
+[![Minimum PHP Version](https://img.shields.io/packagist/php-v/ricardofiorani/guzzle-psr18-adapter.svg)](https://php.net/)
+[![License](https://poser.pugx.org/ricardofiorani/guzzle-psr18-adapter/license.png)](https://packagist.org/packages/ricardofiorani/guzzle-psr18-adapter)
+[![Total Downloads](https://poser.pugx.org/ricardofiorani/guzzle-psr18-adapter/d/total.png)](https://packagist.org/packages/ricardofiorani/guzzle-psr18-adapter)
+[![Coding Standards](https://img.shields.io/badge/cs-PSR--4-yellow.svg)](https://github.com/php-fig-rectified/fig-rectified-standards)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ricardofiorani/guzzle-psr18-adapter/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ricardofiorani/guzzle-psr18-adapter/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/ricardofiorani/guzzle-psr18-adapter/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/ricardofiorani/guzzle-psr18-adapter/?branch=master)
+
 
 A (very) simple guzzle PSR-18 adapter.
 
@@ -42,18 +44,5 @@ $ composer test
 - [Ricardo Fiorani][link-author]
 - [All Contributors][link-contributors]
 
-
-[ico-version]: https://img.shields.io/packagist/v/ricardofiorani/guzzle-psr18-adapter.svg?style=flat-square
-[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/ricardofiorani/guzzle-psr18-adapter/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/ricardofiorani/guzzle-psr18-adapter.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/ricardofiorani/guzzle-psr18-adapter.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/ricardofiorani/guzzle-psr18-adapter.svg?style=flat-square
-
-[link-packagist]: https://packagist.org/packages/ricardofiorani/guzzle-psr18-adapter
-[link-travis]: https://travis-ci.org/ricardofiorani/guzzle-psr18-adapter
-[link-scrutinizer]: https://scrutinizer-ci.com/g/ricardofiorani/guzzle-psr18-adapter/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/ricardofiorani/guzzle-psr18-adapter
-[link-downloads]: https://packagist.org/packages/ricardofiorani/guzzle-psr18-adapter
 [link-author]: https://github.com/ricardofiorani
 [link-contributors]: ../../contributors
