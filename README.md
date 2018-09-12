@@ -10,7 +10,7 @@
 A (very) simple guzzle PSR-18 adapter.
 
 ## Requirements
-- PHP ^7.0 (Due to PSR-18 interface using Return Type Declaration)  
+- PHP ^7.1 (Due to PSR-18 interface using Return Type Declaration)  
 - Guzzle ^6.3
 
 ## Install
