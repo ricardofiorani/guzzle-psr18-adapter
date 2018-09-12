@@ -21,7 +21,7 @@ class Client extends \GuzzleHttp\Client implements ClientInterface
      * object that is actually sent. For example, the Request object that is returned by an exception MAY
      * be a different object than the one passed to sendRequest, so comparison by reference (===) is not possible.
      *
-     * {@link https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-7-http-message-meta.md#why-value-objects}
+     * @link https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-7-http-message-meta.md#why-value-objects
      *
      * @param RequestInterface $request
      *
