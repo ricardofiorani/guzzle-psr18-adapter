@@ -31,6 +31,18 @@ echo $client->sendRequest($request);
 ```
 For futher documentation please see [http://docs.guzzlephp.org/en/stable/](http://docs.guzzlephp.org/en/stable/)
 
+## Testing
+
+``` bash
+$ composer test
+```
+
+## Credits
+
+- [Ricardo Fiorani][link-author]
+- [All Contributors][link-contributors]
+
+
 [ico-version]: https://img.shields.io/packagist/v/ricardofiorani/guzzle-psr18-adapter.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [ico-travis]: https://img.shields.io/travis/ricardofiorani/guzzle-psr18-adapter/master.svg?style=flat-square
