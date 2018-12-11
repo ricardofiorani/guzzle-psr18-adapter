@@ -25,11 +25,14 @@ $ composer require ricardofiorani/guzzle-psr18-adapter
 
 ## Usage
 
-``` php
+```php
 $client = new \RicardoFiorani\GuzzlePsr18Adapter\Client();
 $request = new \Your\Implementation\Of\Psr7\Request();
-
-echo $client->sendRequest($request);
+try {
+    echo $client->sendRequest($request);
+} catch (\Psr\Http\Client\ClientExceptionInterface $exception) {
+    // your error handling
+}
 ```
 For futher documentation please see [http://docs.guzzlephp.org/en/stable/](http://docs.guzzlephp.org/en/stable/)
 
