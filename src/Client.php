@@ -3,6 +3,7 @@
 namespace RicardoFiorani\GuzzlePsr18Adapter;
 
 use GuzzleHttp\Exception\GuzzleException;
+use GuzzleHttp\Psr7\Response;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
@@ -36,7 +37,8 @@ class Client extends \GuzzleHttp\Client implements ClientInterface
         try {
             return $this->send($request);
         } catch (GuzzleException $e) {
-            throw new ClientException($e->getMessage(), $request, null, $e);
+            $response = new Response();
+            throw new ClientException($e->getMessage(), $request, $response, $e);
         }
     }
 }
