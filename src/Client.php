@@ -7,6 +7,7 @@ use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use RicardoFiorani\GuzzlePsr18Adapter\Exception\ClientException;
+use GuzzleHttp\Exception\BadResponseException;
 
 class Client extends \GuzzleHttp\Client implements ClientInterface
 {
@@ -35,6 +36,8 @@ class Client extends \GuzzleHttp\Client implements ClientInterface
     {
         try {
             return $this->send($request);
+        } catch (BadResponseException $e) {
+            return $e->getResponse();
         } catch (GuzzleException $e) {
             throw new ClientException($e->getMessage(), $request, null, $e);
         }
