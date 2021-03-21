@@ -7,6 +7,7 @@ use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
 use PHPUnit\Framework\TestCase;
+use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Message\ResponseInterface;
 use RicardoFiorani\GuzzlePsr18Adapter\Client;
 use GuzzleHttp\Exception\RequestException;
@@ -22,15 +23,13 @@ class ClientTest extends TestCase
         TestCase::assertEquals(200, $r->getStatusCode());
     }
 
-    /**
-     * @expectedException \Psr\Http\Client\ClientExceptionInterface
-     */
     public function testThrowsClientException()
     {
         $mock = new MockHandler([new RequestException("Error Communicating with Server", new Request('GET', 'test'))]);
         $handler = HandlerStack::create($mock);
         $client = new Client(['handler' => $handler]);
         $request = new Request('GET', 'test');
+        $this->expectException(ClientExceptionInterface::class);
         $r = $client->sendRequest($request);
     }
 

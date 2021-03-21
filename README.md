@@ -5,14 +5,12 @@
 [![License](https://poser.pugx.org/ricardofiorani/guzzle-psr18-adapter/license.png)](https://packagist.org/packages/ricardofiorani/guzzle-psr18-adapter)
 [![Total Downloads](https://poser.pugx.org/ricardofiorani/guzzle-psr18-adapter/d/total.png)](https://packagist.org/packages/ricardofiorani/guzzle-psr18-adapter)
 [![Coding Standards](https://img.shields.io/badge/cs-PSR--4-yellow.svg)](https://github.com/php-fig-rectified/fig-rectified-standards)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ricardofiorani/guzzle-psr18-adapter/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ricardofiorani/guzzle-psr18-adapter/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/ricardofiorani/guzzle-psr18-adapter/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/ricardofiorani/guzzle-psr18-adapter/?branch=master)
 
 
 A (very) simple guzzle PSR-18 adapter.
 
 ## Requirements
-- PHP ^7.1 (Due to PSR-18 interface using Return Type Declaration)  
+- PHP ^7.1 || ^8.0
 - Guzzle ^6.3
 
 ## Install
